@@ -19,7 +19,6 @@ function Experience({}: Props) {
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
-        <ExperienceCard />
     </div>
     </motion.div>
   )

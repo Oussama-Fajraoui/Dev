@@ -22,7 +22,7 @@ function ExperienceCard({}: Props) {
             once: true
         }}
         className='w-32 h-32 rounded-full xl:w-[80px] xl:h-[80px] object-cover object-center'
-        src="https://avatars.githubusercontent.com/u/110065475?s=200&v=4"
+        src="https://cdn.logojoy.com/wp-content/uploads/2018/08/23112855/82.png"
         />
 
         <div className='px-0 md:px-10'>
@@ -34,11 +34,11 @@ function ExperienceCard({}: Props) {
                 src="https://cdn.sanity.io/images/81pocpw8/production/4744a617939146ef25141aaac275800035f1c10a-1052x1052.png?w=320&h=320&fit=clip&auto=format"
                 />
                      <img 
-                className='h-10 w-10 rounded-full'
+                className='h-5 w-5 rounded-full'
                 src="https://cdn.sanity.io/images/81pocpw8/production/4744a617939146ef25141aaac275800035f1c10a-1052x1052.png?w=320&h=320&fit=clip&auto=format"
                 />
                      <img 
-                className='h-10 w-10 rounded-full'
+                className='h-5 w-5 rounded-full'
                 src="https://cdn.sanity.io/images/81pocpw8/production/4744a617939146ef25141aaac275800035f1c10a-1052x1052.png?w=320&h=320&fit=clip&auto=format"
                 />
                 {/* Tech used */}
@@ -49,10 +49,10 @@ function ExperienceCard({}: Props) {
             Started ... - Ended ...
             </p>
             <ul className='list-disc space-y-4 ml-5 text-lg'>
-                <li>te</li>
-                <li>te</li>
-                <li>te</li>
-                <li>te</li>
+                <li>Give task to my team members</li>
+                <li>Using React native UI/UX for designing screens</li>
+                <li>Solving conflict</li>
+                <li>Using FireBase to create requests</li>
             </ul>
         </div>
     </article>
