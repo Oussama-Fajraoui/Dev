@@ -36,7 +36,7 @@ function About({}: Props) {
         background
         </h4>
         <p className='text-sm'>
-        I’m a Full Stack JavaScript developer, also I'm a great communicator, dynamic and problem solving person. through my experience I'd worked on a lot of projects that made me technically confident, but I still aiming to learn more technologies and that's why I'm looking to develop my knowledge skills.
+        I’m a Full Stack JavaScript developer, also I'm a great communicator, dynamic and problem solving person. Through my experience I'd worked on a lot of projects that made me technically confident, but I still aiming to learn more technologies and that's why I'm looking to develop my knowledge skills.
         </p>
     </div>
 
