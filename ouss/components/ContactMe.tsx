@@ -1,6 +1,7 @@
 import React from 'react'
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from "react-hook-form";
+import { PageInfo } from '../typings';
 
 type Inputs = {
   name: string,
@@ -10,9 +11,11 @@ type Inputs = {
 };
 
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-function ContactMe({}: Props) {
+function ContactMe({pageInfo}: Props) {
     const { 
         register, 
         handleSubmit, 
@@ -39,17 +42,17 @@ function ContactMe({}: Props) {
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
-                <p className='text-2x1'>+216 26 499 227</p>
+                <p className='text-2x1'>{pageInfo.phoneNumber}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                <p className='text-2x1'>oussama.fajraoui1@gmail.com</p>
+                <p className='text-2x1'>{pageInfo.email}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                <p className='text-2x1'>My Adress</p>
+                <p className='text-2x1'>{pageInfo.adress}</p>
                 </div>
             </div>
             <form 
@@ -82,7 +85,7 @@ function ContactMe({}: Props) {
                 />
                 <button 
                 type="submit" 
-                className='bg-[#F7AB0A] py-5 px-10 rounded-md text-blank font-bold text-lg'>
+                className='bg-[#F7AB0A] py-3 px-10 rounded-md text-blank font-bold text-lg'>
                     Submit
                 </button>
             </form>

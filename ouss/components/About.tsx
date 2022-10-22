@@ -1,9 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-function About({}: Props) {
+function About({ pageInfo }: Props) {
   return (
     <motion.div 
     initial={{ opacity: 0 }}
@@ -26,7 +30,7 @@ function About({}: Props) {
         opacity: 1
     }}
     viewport={{once:true}}
-    src="https://avatars.githubusercontent.com/u/102801929?v=4"
+    src={urlFor(pageInfo?.profilePic).url()}
     className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]'
     />
     <div className='space-y-10 px-0 md:px-10'>
@@ -36,7 +40,7 @@ function About({}: Props) {
         background
         </h4>
         <p className='text-sm'>
-        I’m a Full Stack JavaScript developer, also I'm a great communicator, dynamic and problem solving person. Through my experience I'd worked on a lot of projects that made me technically confident, but I still aiming to learn more technologies and that's why I'm looking to develop my knowledge skills.
+            {pageInfo?.backgroundInformation}
         </p>
     </div>
 
