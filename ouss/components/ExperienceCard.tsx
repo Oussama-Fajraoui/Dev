@@ -31,8 +31,8 @@ function ExperienceCard({ experience }: Props) {
         />
 
         <div className='px-0 md:px-10'>
-            <h4 className='text-4x1 font-light'>Scrum master</h4>
-            <p className='font-bold text-2x1 mt-1'>Green-Aura</p>
+            <h4 className='text-4x1 font-light'>{experience.jobTitle}</h4>
+            <p className='font-bold text-2x1 mt-1'>{experience.company}</p>
             <div className='flex space-x-2 my-2'>
                 {experience.technologies.map((technology) => (
                     <img 
@@ -50,8 +50,8 @@ function ExperienceCard({ experience }: Props) {
             </p>
 
             <ul className='list-disc space-y-4 ml-5 text-lg '>
-                {/* {experience.points?.map((point, i) => (
-                    <li key={i}>{point}</li>
+                {/* {experience.points?.map(point => (
+                    <li >{point}</li>
                 ))} */}
             </ul>
         </div>
